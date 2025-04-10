@@ -1,5 +1,6 @@
 "use client";
 
+import styles from "../home/Home.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -22,10 +23,12 @@ export default function Home() {
     console.log(characters);
     
     return (
-        <div>
+        <div className={styles.container}>
+            <div className={styles.grid}>
             {characters.map((char) => (
                 <CharacterCard key={char.id} characters={char} />
             ))}
+            </div>
         </div>
     );
 }
