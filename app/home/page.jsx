@@ -40,7 +40,6 @@ export default function Home() {
         autoClose={7500} 
         theme="light"
         />
-
             <h1 className={styles.title}>Personagens de Rick and Morty</h1>
             <div className={styles.controls}>
                 <input
