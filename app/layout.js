@@ -2,12 +2,14 @@ import "./globals.css";
 
 export const metadata = {
   title: "Rick and Morty App",
-  description: "Meu primer consumo de API",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html>
+      <head>
+        <link rel="icon" href="./icons-rick-96.png" />
+      </head>
       <body>{children}</body>
     </html>
 );
