@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import CharacterCard from "../../componentes/CharacterCard";
 import styles from "../home/Home.module.css";
@@ -26,13 +28,18 @@ export default function Home() {
             fetchCharacters();
     }, []);
 
+
     const handleCardClick = (name) => {
         toast.info(`Você clicou em ${name}`, {
         });
-    }
+    };
 
     return (
         <div className={styles.container}>
+            <ToastContainer 
+            
+            />
+
             <h1 className={styles.title}>Personagens de Rick and Morty</h1>
             <div className={styles.controls}>
                 <input
