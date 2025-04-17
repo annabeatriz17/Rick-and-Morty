@@ -13,8 +13,8 @@ export default function Home() {
     const [characters, setCharacters] = useState([]);
     const [notFound, setNotFound] = useState(false);
 
-    useEffect(() => {
         const fetchCharacters = async (name = "") => {
+            setNotFound(false);
             try {
                 const { data } = await axios.get(
                     `https://rickandmortyapi.com/api/character?name=${name}`);
@@ -28,7 +28,6 @@ export default function Home() {
             fetchCharacters();
     }, []);
 
-
     const handleCardClick = (name) => {
         toast.info(`Você clicou em ${name}`, {
         });
@@ -36,9 +35,11 @@ export default function Home() {
 
     return (
         <div className={styles.container}>
-            <ToastContainer 
-            
-            />
+            <ToastContainer
+        position="top-right"
+        autoClose={7500} 
+        theme="light"
+        />
 
             <h1 className={styles.title}>Personagens de Rick and Morty</h1>
             <div className={styles.controls}>
@@ -66,7 +67,7 @@ export default function Home() {
             {notFound && <h1 className={styles.notFound}>Nenhum personagem encontrado 😢</h1>}
             <div className={styles.grid}>
             {characters.map((char) => (
-                <CharacterCard key={char.id} characters={char}  onClick={() => handleCardClick(char.nome)}/>
+                <CharacterCard key={char.id} characters={char}  onClick={() => handleCardClick(char.name)}/>
             ))}
             </div>
         </div>
