@@ -24,6 +24,7 @@ export default function Home() {
     
     return (
         <div className={styles.container}>
+            <h1 className={styles.title}>Rick and Morty</h1>
             <div className={styles.grid}>
             {characters.map((char) => (
                 <CharacterCard key={char.id} characters={char} />

@@ -9,6 +9,13 @@
     background-attachment: fixed;
 }
 
+.title {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
