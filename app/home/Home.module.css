@@ -1,5 +1,5 @@
 .container {
-    background-image: url("/wallpaper-rick-and-morty.jpg");
+    background-image: url("/wallpaper.png");
     background-size: cover;
     object-fit: cover;
     background-position: center;
@@ -10,11 +10,13 @@
 }
 
 .title {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5rem;
+    font-family:'Fantasy';
+    font-size: 4rem;
     text-align: center;
     margin: 2rem;
-    color: white;
+    color: #ff009d;
+    text-shadow: 3px 1px 1px rgba(255, 171, 242, 0.881);
+    font-weight: bold;
 }
 
 .controls {
@@ -30,21 +32,20 @@
     padding: 10px;
     border-radius: 10px;
     font-size: 1rem;
-    background-color: #ffffff57;
-    color: white;
-    border: 1px solid #00c6ff55;
+    background-color: #ff3c9e;
+    border: 1px solid #ff3b9dce;
     backdrop-filter: blur(4px);
     outline: none;
     transition: all 0.3s ease;
 }
 
 .input::placeholder {
-    color: white;
+    color: rgb(235, 235, 235);
 }
 
 .input:focus {
-    border-color:aqua;
-    box-shadow: 0 0 3px rgba(0, 198, 255, 0.3);
+    border-color: #ff0080;
+    box-shadow: 0 0 10px rgb(234, 0, 255);
 }
 
 .buttonSearch,
@@ -58,38 +59,29 @@
     cursor: pointer;
     user-select: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(242, 0, 255, 0.2);
     color: white;
 }
 
 .buttonSearch {
-    background: linear-gradient(135deg, #28a745, #34d058);
-}
-
-.buttonSearch:hover {
-    background: linear-gradient(135deg, #218838, #28a745);
-    transform: scale(1.03);
+    background: linear-gradient(135deg, #ff6ec7, #ff6ec7);
 }
 
 .buttonReset {
-    background: linear-gradient(135deg, #dc3545, #ff5e6c);
-}
-
-.buttonReset:hover {
-    background: linear-gradient(135deg, #dc3545, #ff5e6c);
+    background: linear-gradient(135deg, #ff6ec7, #ff6ec7);
 }
 
 .buttonNav {
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background: linear-gradient(135deg,  #ff30b0,  #ff30b0);
 }
 .buttonNav:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 114, 255, 0.3);
+    box-shadow: 0 6px 12px rgb(255, 0, 200);
 }
 
 .buttonNav:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 4px rgba(0, 114, 255, 0.2);
+    box-shadow: 0 2px 4px rgb(255, 0, 208);
 }
 
 .buttonNav:disabled {
@@ -102,10 +94,10 @@
 .pageIndicator {
     font-weight: bold;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: rgb(255, 190, 245);
     padding: 8px 16px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 0, 195, 0.505);
 }
 
 .loading {
@@ -118,7 +110,7 @@
 .notFound {
     font-size: 2rem;
     text-align: center;
-    color: tomato;
+    color: rgb(255, 0, 204);
     margin-top: 4rem;
     text-shadow: 1px 1px 3px black;
 }

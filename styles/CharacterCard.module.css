@@ -3,27 +3,29 @@
     height: 365px;
     padding: 1.5rem;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(242, 124, 255, 0.233);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(255, 13, 239, 0.559);
     color: white;
 }
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.25);
+    box-shadow:  0 10px 25px rgb(106, 106, 106);
 }
 
 .avatar {
     width: 125px;
     border-radius: 50%;
-    border: rgb(0, 0, 0) 3px solid;
+    border: #e420da 3px solid;
 }
 
 .title {
     margin: 10px 0 5px;
     font-size: 20px;
+    color: #ff86d1;
+    text-decoration: underline;
 }

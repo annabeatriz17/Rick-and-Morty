@@ -99,7 +99,7 @@ export default function Home() {
     return (
         <div className={styles.container}>
             <ToastContainer position="top-right" autoClose={7500} theme="light" />
-            <h1 className={styles.title}>Personagens de Rick and Morty🧩</h1>
+            <h1 className={styles.title}>Personagens de Rick and Morty</h1>
             <div className={styles.controls}>
                 <input type="text" placeholder="Buscar por nome" value={search} onChange={(e) => setSearch(e.target.value)} className={styles.input} />
                 <button onClick={handleSearch} className={styles.buttonSearch}>
